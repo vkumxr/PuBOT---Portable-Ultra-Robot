@@ -57,7 +57,9 @@ Create a `HW.md` file in the repo with the exact wiring and photos.
 
 ---
 
-## Wiring / Pinout (example)
+## Interfacing Diagram - Raspberry Pi with L298N motor
+
+![PuBOT](interface_diagram.PNG)
 
 > *Adjust these pins to match your code. Put a photo of the wiring in `docs/wiring.jpg`.*
 
