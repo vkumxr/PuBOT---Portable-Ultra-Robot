@@ -251,26 +251,3 @@ For iterative commits, use feature branches: `git checkout -b feat/camera-webui`
 * Add ML-based object tracking (use simple OpenCV tracking or lightweight models)
 * Add battery monitor and safe shutdown when voltage is low
 * Dockerize the stream server (if using a heavier stack)
-
----
-
-## Contacts & Attribution
-
-Add your name, email, and a short `MAINTAINERS.md` if you plan to accept outside contributors.
-
----
-
-### Files to add now (suggested):
-
-* `README.md` (this file)
-* `LICENSE` (MIT)
-* `requirements.txt` (list all pip packages used)
-* `config.yaml` (example pins and defaults)
-* `teleop.py`, `motor_controller.py`, `stream_server.py`
-* `HW.md`, `docs/demo.gif`, `docs/wiring.jpg`
-* `.gitignore`, `CHANGELOG.md`, `CONTRIBUTING.md`
-
----
-
-*If you want, I can also generate ready-to-copy files (README.md, LICENSE, .gitignore, config.yaml template, and a stub teleop.py and motor_controller.py) and put them here so you can copy into your repo.*
-
