@@ -6,7 +6,7 @@
 
 **A compact Raspberry Pi–based teleoperated robot with camera streaming and motor control**
 
-> Pubot is a Raspberry Pi robot that currently accepts keyboard (or mouse) control, streams the Pi Camera feed, and drives two DC motors through an L298N (or similar) H-bridge. It’s designed for learning embedded Linux, computer vision, and basic robotics.
+ Pubot is a Raspberry Pi robot that currently accepts keyboard (or mouse) control, streams the Pi Camera feed, and drives two DC motors through an L298N (or similar) H-bridge. It’s designed for learning embedded Linux, computer vision, and basic robotics.
 
 ---
 
@@ -43,7 +43,7 @@ Create a `HW.md` file in the repo with the exact wiring and photos.
 
 ---
 
-## BOM (example)
+## COMPONENTS USED
 
 | Item                   | Qty | Notes                             |
 | ---------------------- | --: | --------------------------------- |
@@ -52,8 +52,7 @@ Create a `HW.md` file in the repo with the exact wiring and photos.
 | L298N Motor Driver     |   1 | or TB6612 for better efficiency   |
 | 12V battery pack       |   1 | Motor supply (match motor rating) |
 | DC gear motors         |   2 | with wheels                       |
-| Chassis                |   1 |                                   |
-| Misc wires & screws    |   — |                                   |
+| Mics speaker screws    |   — |                                   |
 
 ---
 
@@ -98,8 +97,8 @@ Include exact wiring diagrams in `HW.md`.
 2. Clone this repository on the Pi:
 
 ```bash
-git clone https://github.com/<your-username>/pubot.git
-cd pubot
+git clone https://github.com/vkumxr/PuBOT---Portable-Ultra-Robot
+cd PuBOT---Portable-Ultra-Robot
 ```
 
 3. Create a Python virtual environment and install dependencies:
@@ -156,20 +155,6 @@ pubot/
 ```
 
 Keep modules small and well-documented. Add docstrings to every function.
-
----
-
-## Example: teleop.py (high-level behavior)
-
-```python
-# teleop.py (pseudo-code outline)
-# - init motor controller
-# - init camera (if requested)
-# - loop: read keyboard / mouse events -> map to motor speeds
-# - gracefully handle exit
-```
-
-Add the real file under `teleop.py` — keep the mapping and inversion fixes configurable (e.g. `invert_x: true`).
 
 ---
 
