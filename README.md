@@ -6,7 +6,7 @@
 
 **A compact Raspberry Pi–based teleoperated robot with camera streaming and motor control**
 
-> *Short description*: Pubot is a hobbyist Raspberry Pi robot that accepts keyboard (or mouse) control, streams the Pi Camera feed, and drives two DC motors through an L298N (or similar) H-bridge. It’s designed for learning embedded Linux, computer vision, and basic robotics.
+> Pubot is a Raspberry Pi robot that currently accepts keyboard (or mouse) control, streams the Pi Camera feed, and drives two DC motors through an L298N (or similar) H-bridge. It’s designed for learning embedded Linux, computer vision, and basic robotics.
 
 ---
 
@@ -33,8 +33,8 @@
 * Raspberry Pi 4 / 3 / Zero 2 W (any Pi with camera support)
 * Raspberry Pi Camera Module (v2 / HQ) or USB webcam
 * H-bridge motor driver (L298N or TB6612)
-* 2 × DC gear motors with wheels
-* Chassis (3D printed or hobby chassis)
+* 2 (or 4) × DC gear motors with wheels
+* Chassis (3D printed or hobby chassis) or a cardboard
 * Power supply: separate battery for motors (recommended) and 5V supply for Pi (power bank)
 * Jumper wires, female/male headers
 * Optional: ultrasonic sensor (HC-SR04) for obstacle detection
@@ -60,8 +60,6 @@ Create a `HW.md` file in the repo with the exact wiring and photos.
 ## Interfacing Diagram - Raspberry Pi with L298N motor
 
 <img src="Interface_diagram.png" width="400">
-
-> *Adjust these pins to match your code. Put a photo of the wiring in `docs/wiring.jpg`.*
 
 * Left motor:
 
